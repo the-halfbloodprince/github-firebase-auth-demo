@@ -17,6 +17,7 @@ export const signInWithGitHub = async (onSuccessfulLogin) => {
             const credential = GithubAuthProvider.credentialFromResult(result)
             const token = credential.accessToken
             const user = result.user
+            console.log(token)
             console.log(user)
 
             if (token) {
